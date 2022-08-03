@@ -17,4 +17,23 @@ function buildTable(data) {
         });
 
     });
-}
+};
+
+// function: 
+function handleClick() {
+
+    let date = d3.select("#datetime").property("value"); // d3 library: select the 1st '#datetime' ID in html tags
+    let filteredData = tableData; // raw dataset
+
+    if (date) {
+        filteredData = filteredData.filter(row => row.datetime === date); // show only rows with the chosen date
+    }
+
+    buildTable(filteredData); // construct a new table with filtered data
+};
+
+// execute handleClick when a filter button is clicked
+d3.selectAll("#filter-btn").on("click", handleClick); 
+
+// construct the complete table when the page loads
+buildTable(tableData); 
