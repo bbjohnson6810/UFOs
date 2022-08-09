@@ -15,7 +15,7 @@ UFO sightings in the dataset:
 
 To perform a search for specific data, the user can fill entries into search bars. Specifically, the data can be filtered
 by date, city, state, country, and/or shape of the UFO sighting. Pressing 'enter' after filling the search bar filters the data 
-to return all results that match the searched criteria:
+to return all results that match the searched criteria (for example, all sightings in the state of Massachusetts):
 
 ![](resources/table_filtered.png)
 
